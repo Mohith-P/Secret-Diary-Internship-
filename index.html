@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Diary</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <h1>Secret Diary</h1>
+        <p>Store your thoughts permanently and securely.</p>
+        <p id="error"></p>
+        <form onsubmit="return vali()" action="login_SignUp.php" method="POST">
+            <p id="login">Login using your email and password.</p>
+            <p id="signup">interested? Sign up now.</p>
+            <input id="name" type="email" name="Name" placeholder="Your Email" >
+            <input id="password" type="password" name="Password" placeholder="Password" >
+            <input id="login2" type="submit" name="LSubmit" value="Log in!">
+            <input id="signup2" type="submit" name="SSubmit" value="Sign Up!">
+            <p class="opt" id="signup1">SignUp</p>
+            <p class="opt" id="login1">Login</p>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
